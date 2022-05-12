@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+/* ASSETS
+font-family: 'Roboto', sans-serif;
+Farben: #0b0c17 / #ff3571 / #dddddd / #3C30FF / #FFF / #000
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 4.5rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+h3 {
+    font-size: 3.8rem;
+}
+
+/* ========================
+           Header
+=========================== */
+
+header {
+    background: right top / 55% no-repeat url("../img/ilustracion1.png");
+    height: 100vh;
+}
+
+#logo img {
+    width: 50px;
+    margin: 0 3vw;
+    position: fixed;
+}
+
+#logo p:first-of-type {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+#logo p:last-of-type {
+    font-size: 1rem;
+}
+
+#logo {
+    padding: 30px 0;
+}
+
+#logo p {
+    margin-left: 130px;
+}
+
+.aniPeople {
+    position: absolute;
+    width: 55%;
+    right: 50px;
+    animation-name: fly;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes fly {
+    from {
+        top: 0px;
+    }
+
+    to {
+        top: 100px;
+    }
+}
+
+
+
+/* ========================
+           Main
+=========================== */
+
+/* ====== SECTION top ========= */
+
+#top {
+    width: 50vw;
+    margin: 30vh 0 0 12vw;
+}
+
+#top a {
+    text-decoration: none;
+    color: #ff3571;
+}
+
+#top h1 {
+    margin-bottom: 20px;
+}
+
+#top p {
+    margin-top: 100px;
+}
+
+
+
+/* ====== SECTION preview ============ */
+
+#preview img {
+    width: 100vw;
+    margin-top: 20vh 20vw;
+}
+
+#startIdea {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 20vh 0;
+}
+
+#startIdea h3 {
+    width: 30%;
+    align-self: flex-start;
+}
+
+#startIdea h4 {
+    font-weight: 200;
+    line-height: 2.5rem;
+    width: 42%;
+}
+
+/* ====== SECTION learned======= */
+
+#learned {
+    width: 70%;
+    margin: 0 0 0 10%;
+}
+
+#learned div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0px;
+}
+
+#learned h3 {
+    width: 70%;
+    margin: 20vh 0;
+}
+
+#learned article {
+    width: 40%;
+}
+
+#learned article img {
+    width: 40px;
+    height: 40px;
+}
+
+#learned article h2 {
+    display: inline;
+    font-weight: 600;
+    margin: 0 0 0 14px
+}
+
+#learned article p {
+    margin: 5px 0 0 60px;
+    line-height: 2rem;
+}
+
+/* ====== SECTION letsGo ======= */
+
+#letsGo article {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* width: 100%; */
+}
+
+#letsGo h3,
+#letsGo h2 {
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.letsGoImg {
+    width: 20%;
+}
+
+#letsGo article div {
+    width: 30%;
+}
+
+#letsGo article p:first-of-type {
+    color: #ddd;
+    font-size: 3rem;
+}
+
+#letsGo article h2 {
+    text-align: left;
+    font-weight: 600;
+    margin: 0;
+}
+
+footer {
+    position: relative;
+}
+
+#subscribe {
+    text-align: center;
+}
+
+#subscribe input[type="email"] {
+    display: block;
+    width: 25%;
+    border: none;
+    padding: 10px 30px;
+    margin: 50px auto;
+    box-shadow: 0px 0px 10px;
+}
+
+#subscribe input[type="submit"] {
+    display: block;
+    width: 25%;
+    border: none;
+    padding: 10px 30px;
+    margin: 50px auto;
+    box-shadow: 0px 0px 10px;
+}
+
+#overlayConfirm {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: tomato;
+    visibility: hidden;
+}
